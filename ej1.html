@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const div = $("<div>H</div>");
+        div.css("height","100px");
+        div.css("width","100px");
+        div.css("background-color","black");
+        div.css("position","absolute");
+        $("body").append(div);
+        var pis = 300;
+        $(function () {
+            div.on("click", function () {
+                
+                $(div).animate({ left: pis+"px" }, 1000);
+                pis+=300;
+            })
+        })
+        
+    </script>
+</body>
+</html>
